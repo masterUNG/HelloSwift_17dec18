@@ -9,6 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+//    Explicit
+    var titleString: String = "Master UNG"
+    
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    
+    
+    @IBAction func changeButton(_ sender: Any) {
+        
+        print("You Click ChangeButton")
+        
+        titleLabel.text = titleString
+        
+    }   // changeButton Functon
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
